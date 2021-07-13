@@ -1,0 +1,89 @@
+.contenido{
+	padding-top: 8%;
+	padding-bottom: 8%;
+	width: 100%;
+	height: auto;
+	color: #fff;
+	background: #F3F3F3;
+	display: grid;
+	grid-gap: 25px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "uno dos tres"
+	                     "cuatro cinco seis";
+}
+
+.uno{
+	grid-area: uno;
+}
+
+.dos{
+	grid-area: dos;
+}
+.tres{
+	grid-area: tres;
+}
+
+.cuatro{
+	grid-area: cuatro;
+}
+
+.cinco{
+	grid-area: cinco;
+}
+.seis{
+	grid-area: seis;
+}
+
+
+.contenido .baner{
+	width: 100%;
+	height: 290px;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.baner img{
+	width: 80%;
+	height: 200px;
+	margin-top: 25px; 
+	margin-bottom: 15px; 
+}
+
+.baner img:hover{
+	opacity: 0.8;
+
+}
+
+.contenido .baner:hover{
+	animation: koko 2s;
+	background: black;
+	color: #fff;
+}
+
+@keyframes koko{
+	0%{ background: transparent; }
+	50%{ background: black; }
+	100%{ color: #fff;
+	      animation-play-state: paused; }
+}
+
+@media screen and (max-width: 1200px){
+	.contenido{
+	padding-top: 8%;
+	padding-bottom: 8%;
+	width: 100%;
+	height: auto;
+	color: #fff;
+	background: #F3F3F3;
+	display: grid;
+	grid-gap: 25px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "uno dos"
+	                     "tres cuatro"
+	                     "cinco seis";
+}
+}

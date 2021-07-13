@@ -1,0 +1,103 @@
+.encabezado{
+	margin-top: 230px;
+	background: #F3F3F3;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 100px; 
+
+}
+
+.encabezado .eduart{
+	color: #fff;
+	font-size: 20px;
+	width: 60%;
+	padding: 10%;
+	background: linear-gradient(to left, #06C049 ,green, #06C049);
+	border-radius: 20px;
+}
+
+.encabezado .mirador{
+	background: #101D71;
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	height: 200px;
+    margin-left: -5%; 
+    overflow: hidden;
+}
+.encabezado .mirador img{
+	opacity: .5;
+	height: 200px;
+}
+
+.encabezado .mirador .carrusel{
+	animation: carrusel 10s infinite alternate;
+}
+
+@keyframes carrusel{
+	0%{margin-top: -0%;}
+	14.2%{margin-top: -0%;}
+	28.4%{margin-top: -68%;}
+	42.6%{margin-top: -68%;}
+	56.8%{margin-top: -136%;}
+	71%{margin-top: -136%;}
+	85.2%{margin-top: -204%;}
+	100%{margin-top: -204%;}
+
+}
+@media screen and (max-width: 1200px){
+	.encabezado{
+	margin-top: 480px;
+	height: 450px;
+	padding-bottom: 150px; 
+
+}
+
+.encabezado .eduart{
+	color: #fff;
+	font-size: 30px;
+	font-family: arial;
+	font-weight: 800;
+	width: 65%;
+	padding: 8%;
+	border-radius: 55px; 
+}
+
+.encabezado .eduart h1{
+	text-align: center;
+	font-family: arial;
+	font-weight: 100;
+}
+
+
+.encabezado .mirador{
+	background: #101D71;
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	height: 300px;
+    margin-left: -5%; 
+    overflow: hidden;
+}
+.encabezado .mirador img{
+	opacity: .5;
+	height: 300px;
+}
+
+@keyframes carrusel{
+	0%{margin-top: -0%;}
+	14.2%{margin-top: -0%;}
+	28.4%{margin-top: -102.5%;}
+	42.6%{margin-top: -102.5%;}
+	56.8%{margin-top: -205%;}
+	71%{margin-top: -205%;}
+	85.2%{margin-top: -307.5%;}
+	100%{margin-top: -307.5%;}
+
+}
+
+	}

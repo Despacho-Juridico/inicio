@@ -1,0 +1,62 @@
+.contacto{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contacto .c{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: space-between;
+	align-items: center;
+	height: 110px;
+}
+
+.ma{
+	grid-area: mapa;
+	width: 100%;
+}
+
+.contacto a{
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	margin: 0 80px;
+}
+
+.contacto svg{
+	width: 90%;
+	height: 90%;
+}
+
+@media screen and (max-width: 1200px){
+	.contacto{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.contacto .c{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: space-between;
+	align-items: center;
+	height: 110px;
+}
+
+.contacto a{
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	margin: 40px 40px;
+}
+
+}
